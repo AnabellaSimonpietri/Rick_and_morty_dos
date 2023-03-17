@@ -1,17 +1,25 @@
 .searchInput {
   border: 0px;
   border-radius: 15px 0px 0px 15px;
-  background-color: white;
+  background-color: #e0e0e0;
   height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
 
 .searchButton {
   border: 0px;
   border-radius: 0px 15px 15px 0px;
-  background: #00ff00;
+  background-color: #00ff00;
   height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .bar {
   width: 15%;
+  display: flex;
+  margin-bottom: 1em;
 }
