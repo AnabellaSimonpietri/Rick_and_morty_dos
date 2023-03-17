@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./About.css";
 
 class About extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <h1>Este es el componente About</h1>
+        <h1>Esta es mi primera App</h1>
       </>
     );
   }

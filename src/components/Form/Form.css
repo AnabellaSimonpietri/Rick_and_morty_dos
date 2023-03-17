@@ -1,0 +1,48 @@
+label {
+  border: 0px;
+  border-radius: 0px 15px 15px;
+  background-color: yellow;
+  height: 3em;
+  justify-content: center;
+  margin: 5px;
+}
+
+input {
+  border: 0px;
+  border-radius: 0px 15px 15px;
+  background-color: #e0e0e0;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 5px;
+  align-items: center;
+}
+
+button {
+  border: 0px;
+  border-radius: 0px 15px 15px;
+  background-color: #00ff00;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 4px;
+  text-align: center;
+}
+
+form {
+  background: #0013ff;
+  background: linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
+  background: -webkit-linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
+  background: -moz-linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
+  width: 20%;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  text-shadow: 6px 4px 7px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -49%);
+}

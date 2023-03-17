@@ -1,0 +1,15 @@
+h1 {
+  background: #0013ff;
+  background: linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
+  background: -webkit-linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
+  background: -moz-linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
+  width: 20%;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -49%);
+}

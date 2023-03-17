@@ -1,7 +1,6 @@
 import Cards from "./components/Cards/Cards.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 import { useEffect, useState } from "react";
-import style from "./App.modules.css";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
