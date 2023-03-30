@@ -1,5 +1,6 @@
 import style from "./Card.module.css";
 import { Link } from "react-router-dom";
+import React from "react";
 
 export default function Card({ id, name, species, gender, image, onClose }) {
   return (

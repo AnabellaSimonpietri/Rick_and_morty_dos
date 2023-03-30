@@ -8,9 +8,14 @@ class About extends React.Component {
 
   render() {
     return (
-      <>
-        <h1>Esta es mi primera App</h1>
-      </>
+      <div className={style.content}>
+        <figure>
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/projects/808/d12e88167218423.Y3JvcCwxMDgwLDg0NCwwLDExNw.png"
+            alt="Dibujo de chica programadora."
+          />
+        </figure>
+      </div>
     );
   }
 }

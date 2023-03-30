@@ -10,14 +10,17 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div>
-        <SearchBar onSearch={this.props.onSearch} />
-        <Link to="/about">
-          <h3>ABOUT</h3>
-        </Link>
+      <div className={style.mainContainer}>
         <Link to="/home">
-          <h3>HOME</h3>
+          <h3>Home</h3>
         </Link>
+        <Link to="/favorites">
+          <h3>Favorites</h3>
+        </Link>
+        <Link to="/about">
+          <h3>About</h3>
+        </Link>
+        <SearchBar onSearch={this.props.onSearch} />
       </div>
     );
   }
