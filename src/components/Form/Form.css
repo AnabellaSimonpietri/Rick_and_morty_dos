@@ -29,6 +29,7 @@ button {
   justify-content: end;
   margin: 4px;
   text-align: center;
+  font: oblique bold 100% cursive;
 }
 
 form {
@@ -38,7 +39,7 @@ form {
   background: -moz-linear-gradient(19deg, #0013ff 0%, #00ff00 80%);
   width: 20%;
   padding: 1em;
-  border-radius: 10px;
+  border-radius: 40px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   text-shadow: 6px 4px 7px rgba(0, 0, 0, 0.6);
   position: absolute;

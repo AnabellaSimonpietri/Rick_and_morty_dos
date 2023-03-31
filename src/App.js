@@ -5,6 +5,7 @@ import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
 import Form from "./components/Form/Form";
+import Favorites from "./components/Favorites/Favorites.jsx";
 
 function App() {
   // ! HOOKS
@@ -64,6 +65,9 @@ function App() {
         />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:detailId" element={<Detail />} />
+        <Route path="favorites">
+          <Route index element={<Favorites />} />
+        </Route>
       </Routes>
     </div>
   );
