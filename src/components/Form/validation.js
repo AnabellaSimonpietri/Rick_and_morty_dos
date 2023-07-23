@@ -1,24 +1,24 @@
 const validation = (userData, errors, setErrors) => {
   // username
   if (!userData.username)
-    setErrors({ ...errors, username: "Por favor completa este campo" });
+    setErrors({ ...errors, username: 'Please complete this field' });
   else if (userData.username.length > 35)
-    setErrors({ ...errors, username: "No puede superar los 35 caracteres" });
+    setErrors({ ...errors, username: 'Cannot exceed 35 characters' });
   else if (
     !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/.test(userData.username)
   ) {
-    setErrors({ ...errors, username: "Email inválido" });
+    setErrors({ ...errors, username: 'Invalid email' });
   } else {
-    setErrors({ ...errors, username: "" });
+    setErrors({ ...errors, username: '' });
   }
 
   // password
   if (userData.password.length < 6 || userData.password.length > 10) {
-    setErrors({ ...errors, password: "Longitud de password inválida" });
+    setErrors({ ...errors, password: 'Invalid password length' });
   } else if (!/\d/.test(userData.password)) {
-    setErrors({ ...errors, password: "Debe contener al menos un número" });
+    setErrors({ ...errors, password: 'Must contain at least one number' });
   } else {
-    setErrors({ ...errors, password: "" });
+    setErrors({ ...errors, password: '' });
   }
 };
 

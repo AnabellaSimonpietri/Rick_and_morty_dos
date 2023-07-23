@@ -1,11 +1,11 @@
-import Cards from "./components/Cards/Cards.jsx";
-import Nav from "./components/Nav/Nav.jsx";
-import { useEffect, useState } from "react";
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import About from "./components/About/About.jsx";
-import Detail from "./components/Detail/Detail.jsx";
-import Form from "./components/Form/Form";
-import Favorites from "./components/Favorites/Favorites.jsx";
+import Cards from './components/Cards/Cards.jsx';
+import Nav from './components/Nav/Nav.jsx';
+import { useEffect, useState } from 'react';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import About from './components/About/About.jsx';
+import Detail from './components/Detail/Detail.jsx';
+import Form from './components/Form/Form';
+import Favorites from './components/Favorites/Favorites.jsx';
 
 function App() {
   // ! HOOKS
@@ -15,19 +15,19 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    !access && navigate("/");
+    !access && navigate('/');
   }, [access]);
 
   // ! CREDENCIALES FAKE
-  const username = "anabellasimonpietri@gmail.com";
-  const password = "mipass123";
+  const username = 'myrick@gmail.com';
+  const password = 'mypass123';
 
   const onSearch = (id) => {
-    const URL_BASE = "https://be-a-rym.up.railway.app/api";
-    const KEY = "dda0e615d14c.cfb009cdce3a34cdfd7f";
+    const URL_BASE = 'https://be-a-rym.up.railway.app/api';
+    const KEY = 'dda0e615d14c.cfb009cdce3a34cdfd7f';
 
     if (characters.find((char) => char.id === id)) {
-      return alert("Repeated character");
+      return alert('Repeated character');
     }
 
     fetch(`${URL_BASE}/character/${id}?key=${KEY}`)
@@ -36,7 +36,7 @@ function App() {
         if (data.name) {
           setCharacters((oldChars) => [...oldChars, data]);
         } else {
-          alert("Error");
+          alert('Error');
         }
       });
   };
@@ -48,24 +48,24 @@ function App() {
   const login = (userData) => {
     if (userData.username === username && userData.password === password) {
       setAccess(true);
-      navigate("/home");
+      navigate('/home');
     } else {
-      alert("Credenciales incorrectas");
+      alert('Incorrect credentials');
     }
   };
 
   return (
     <div>
-      {pathname !== "/" && <Nav onSearch={onSearch} />}
+      {pathname !== '/' && <Nav onSearch={onSearch} />}
       <Routes>
-        <Route path="/" element={<Form login={login} />} />
+        <Route path='/' element={<Form login={login} />} />
         <Route
-          path="/home"
+          path='/home'
           element={<Cards characters={characters} onClose={onClose} />}
         />
-        <Route path="/about" element={<About />} />
-        <Route path="/favorites" element={<Favorites />} />
-        <Route path="/detail/:detailId" element={<Detail />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/favorites' element={<Favorites />} />
+        <Route path='/detail/:detailId' element={<Detail />} />
       </Routes>
     </div>
   );
