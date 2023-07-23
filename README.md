@@ -16,5 +16,6 @@ Este proyecto utiliza las siguientes tecnologías:
     Express
 
 ## 👩‍💻 Estado actual del proyecto 👩‍💻
+![image](https://github.com/AnabellaSimonpietri/Rick_and_morty_dos/assets/120821574/c67cb78a-746d-46ae-844b-60c0fdd4cb02)
 
 En proceso!
